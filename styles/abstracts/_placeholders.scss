@@ -1,0 +1,25 @@
+%flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+%grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+%button-style {
+  width: 20.4rem;
+  height: 7.2rem;
+  border: none;
+  color: $color-white;
+  font-family: "Big Shoulders Display";
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 3.64px;
+  text-transform: uppercase;
+}

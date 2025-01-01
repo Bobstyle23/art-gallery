@@ -1,0 +1,47 @@
+.btn {
+  @extend %button-style;
+  margin-left: 20rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__idle {
+    background-color: $color-black;
+    position: relative;
+
+    &::after,
+    &::before {
+      @extend %flexbox;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 5.6rem;
+      height: 7.2rem;
+      background-color: $color-gold;
+    }
+
+    &:hover {
+      background-color: $color-gold;
+
+      &::after,
+      &::before {
+        background-color: $color-black;
+      }
+    }
+
+    &-1 {
+      &::after {
+        content: url("../../assets/icon-arrow-right.svg");
+        right: -5.6rem;
+      }
+    }
+
+    &-2 {
+      &::before {
+        content: url("../../assets/icon-arrow-left.svg");
+        left: -5.6rem;
+      }
+    }
+  }
+}
