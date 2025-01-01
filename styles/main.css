@@ -1,9 +1,13 @@
 /* NOTE: All importss */
-.btn__idle::after, .btn__idle::before {
+.btn, .btn__idle::after, .btn__idle::before, .hero__information {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr; }
 
 .btn {
   width: 20.4rem;
@@ -14,7 +18,8 @@
   font-weight: 800;
   font-size: 2rem;
   letter-spacing: 3.64px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
 
 *,
 *::after,
@@ -32,29 +37,62 @@ body {
   font-weight: 500;
   line-height: 1; }
 
-.btn {
-  margin-left: 20rem; }
-  .btn:hover {
-    cursor: pointer; }
-  .btn__idle {
-    background-color: #151515;
-    position: relative; }
-    .btn__idle::after, .btn__idle::before {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 5.6rem;
-      height: 7.2rem;
-      background-color: #d5966c; }
-    .btn__idle:hover {
-      background-color: #d5966c; }
-      .btn__idle:hover::after, .btn__idle:hover::before {
-        background-color: #151515; }
-    .btn__idle-1::after {
-      content: url("../../assets/icon-arrow-right.svg");
-      right: -5.6rem; }
-    .btn__idle-2::before {
-      content: url("../../assets/icon-arrow-left.svg");
-      left: -5.6rem; }
+.hero__title {
+  font-size: 9.6rem;
+  font-weight: 900;
+  font-family: "Big Shoulders Display";
+  line-height: 88px;
+  text-transform: uppercase; }
+
+.hero__description {
+  font-family: "Outfit";
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 32px; }
+
+.hero__description {
+  font-size: 1.8rem;
+  line-height: 28px; }
+
+.btn:hover {
+  cursor: pointer; }
+.btn__idle {
+  background-color: #151515;
+  position: relative; }
+  .btn__idle::after, .btn__idle::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5.6rem;
+    height: 7.2rem;
+    background-color: #d5966c; }
+  .btn__idle:hover {
+    background-color: #d5966c; }
+    .btn__idle:hover::after, .btn__idle:hover::before {
+      background-color: #151515; }
+  .btn__idle-1::after {
+    content: url("../../assets/icon-arrow-right.svg");
+    right: -5.6rem; }
+  .btn__idle-2::before {
+    content: url("../../assets/icon-arrow-left.svg");
+    left: -5.6rem; }
+
+.hero {
+  row-gap: 3.2rem;
+  margin-bottom: 12rem; }
+  .hero__information {
+    padding: 0 1.6rem;
+    gap: 3.2rem;
+    align-items: baseline; }
+  .hero__title {
+    font-size: 6rem;
+    line-height: 55px;
+    color: #151515; }
+  .hero__description {
+    color: #444; }
+
+.main-container {
+  max-width: 144rem;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

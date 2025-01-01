@@ -1,0 +1,24 @@
+.hero {
+  @extend %grid;
+  row-gap: 3.2rem;
+  margin-bottom: 12rem;
+
+  &__information {
+    @extend %flexbox;
+    padding: 0 1.6rem;
+    gap: 3.2rem;
+    align-items: baseline;
+  }
+
+  &__title {
+    @extend %heading-xl;
+    font-size: 6rem;
+    line-height: 55px;
+    color: $color-black;
+  }
+
+  &__description {
+    @extend %body-sm;
+    color: $color-dark-gray;
+  }
+}

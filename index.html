@@ -28,5 +28,36 @@
 
     <title>Art gallery website</title>
   </head>
-  <body></body>
+  <body>
+    <main class="main-container">
+      <section class="hero">
+        <picture class="hero__image">
+          <source
+            srcset="./assets/desktop/image-hero.jpg"
+            media="(min-width:1024px)"
+          />
+          <source
+            srcset="./assets/tablet/image-hero.jpg"
+            media="(min-width:768px)"
+          />
+          <img
+            src="./assets/mobile/image-hero.jpg"
+            alt="Couple young adults exploring a frame image of a woman with white short curly hairs wearing a glasses"
+          />
+        </picture>
+        <div class="hero__information">
+          <h1 class="hero__title">
+            Modern<br />
+            art gallery
+          </h1>
+          <p class="hero__description">
+            The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit us
+            and find out.
+          </p>
+          <a href="#" class="btn btn__idle btn__idle-1">Our Location</a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
