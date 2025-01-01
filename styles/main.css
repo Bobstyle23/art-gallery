@@ -77,6 +77,10 @@ body {
     content: url("../../assets/icon-arrow-left.svg");
     left: -5.6rem; }
 
+.main-container {
+  max-width: 144rem;
+  margin: 0 auto; }
+
 .hero {
   row-gap: 3.2rem;
   margin-bottom: 12rem; }
@@ -91,8 +95,7 @@ body {
   .hero__description {
     color: #444; }
 
-.main-container {
-  max-width: 144rem;
-  margin: 0 auto; }
+.gallery {
+  padding: 0 1.6rem; }
 
 /*# sourceMappingURL=main.css.map */
