@@ -29,7 +29,26 @@
     <title>Art gallery website</title>
   </head>
   <body>
-    <main class="main-container"></main>
+    <main class="main-container">
+      <header class="location__header">
+        <picture class="location__image">
+          <source
+            srcset="./assets/desktop/image-map.png"
+            media="(min-width: 64em)"
+          />
+          <source
+            srcset="./assets/tablet/image-map.png"
+            media="(min-width: 48em)"
+          />
+          <img src="./assets/mobile/image-map.png" alt="" />
+        </picture>
+      </header>
+      <nav class="location__navigation">
+        <a class="btn btn__idle btn__idle-2" href="./index.html"
+          >Back to home</a
+        >
+      </nav>
+    </main>
     <footer class="footer footer__location">
       <h4 class="footer__title">
         Modern<br />

@@ -1,1 +1,17 @@
+.location {
+  &__header {
+    position: relative;
+  }
 
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__navigation {
+    position: absolute;
+    top: 0;
+    left: 5.6rem;
+  }
+}
