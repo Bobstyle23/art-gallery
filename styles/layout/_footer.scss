@@ -1,17 +1,25 @@
 .footer {
+  max-width: 144rem;
+  margin: 0 auto;
   @extend %grid;
   justify-items: baseline;
   row-gap: 3.8rem;
-  max-width: 144rem;
-  margin: 0 auto;
+
   aspect-ratio: 1440 / 375;
 
   padding: 4.8rem 3.2rem;
   background-color: $color-black;
   color: $color-white;
 
+  &__location {
+    background-color: $color-gold;
+    color: $color-black;
+  }
+
   &__title {
     @extend %heading-sm;
+    font-size: 2.4rem;
+    line-height: 22px;
   }
 
   &__description {
@@ -24,5 +32,11 @@
     @extend %flexbox;
     flex-direction: row;
     gap: 2rem;
+  }
+
+  &__icon {
+    &--black {
+      filter: brightness(0) saturate(100%);
+    }
   }
 }
