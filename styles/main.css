@@ -112,6 +112,8 @@ body {
     height: 100%; }
     .gallery__image--first {
       margin-bottom: 0.8rem; }
+    .gallery__image--first {
+      grid-column: 1 / -1; }
   .gallery__information {
     align-items: baseline;
     gap: 2.1rem;
