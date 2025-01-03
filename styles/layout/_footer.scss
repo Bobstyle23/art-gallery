@@ -1,4 +1,5 @@
 .footer {
+  @extend %grid;
   max-width: 144rem;
   margin: 0 auto;
   @extend %grid;
@@ -37,6 +38,18 @@
   &__icon {
     &--black {
       filter: brightness(0) saturate(100%);
+    }
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .footer {
+    grid-template-columns: 0.75fr 1fr 0.75fr;
+    padding: 5.6rem 4rem;
+
+    &__icons {
+      align-self: baseline;
+      justify-self: end;
     }
   }
 }
