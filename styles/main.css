@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center; }
 
-.hero, .gallery, .footer {
+.hero, .gallery, .footer, .address {
   display: grid;
   grid-template-columns: 1fr; }
 
@@ -199,5 +199,17 @@ body {
       color: #d5966c; }
   .address address {
     font-style: normal; }
+
+@media (min-width: 48em) {
+  .location__navigation {
+    left: 9.5rem; }
+
+  .address {
+    grid-template-columns: 1fr 39.8rem;
+    column-gap: 6.8rem;
+    padding: 8.8rem 3.9rem 8rem; }
+    .address__title {
+      font-size: 5.5rem;
+      line-height: 50px; } }
 
 /*# sourceMappingURL=main.css.map */
