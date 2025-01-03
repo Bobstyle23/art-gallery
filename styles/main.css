@@ -90,7 +90,8 @@ body {
 
 .main-container {
   max-width: 144rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .hero {
   position: relative;
@@ -191,8 +192,6 @@ body {
       line-height: 28px; } }
 .location__image img {
   width: 100%; }
-.location__header {
-  position: relative; }
 .location__navigation {
   position: absolute;
   top: 0;
@@ -229,6 +228,9 @@ body {
       line-height: 50px;
       max-width: 25rem; } }
 @media (min-width: 75em) {
+  .location__navigation {
+    left: 21.2rem; }
+
   .address {
     grid-template-columns: repeat(2, 1fr);
     padding: 10.4rem 16.5rem 12.8rem;
