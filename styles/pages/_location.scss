@@ -3,15 +3,44 @@
     position: relative;
   }
 
-  &__image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
   &__navigation {
     position: absolute;
     top: 0;
     left: 5.6rem;
+  }
+}
+
+.address {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 4.8rem 1.6rem 5.6rem;
+
+  &__title {
+    @extend %heading-md;
+    font-size: 5rem;
+    line-height: 45px;
+    margin-bottom: 4.8rem;
+  }
+
+  &__info {
+    @extend %flexbox;
+    align-items: baseline;
+    gap: 2rem;
+
+    &-title {
+      @extend %heading-sm;
+      font-size: 3.2rem;
+      line-height: 1;
+      color: $color-gold;
+    }
+
+    &-description {
+      @extend %body-sm;
+    }
+  }
+
+  address {
+    @extend %body-sm;
+    font-style: normal;
   }
 }
