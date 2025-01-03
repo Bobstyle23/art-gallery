@@ -1,9 +1,15 @@
 .hero {
   @extend %grid;
-  position: relative;
 
-  row-gap: 3.2rem;
   margin-bottom: 12rem;
+
+  &__image {
+    margin-bottom: 3.2rem;
+
+    img {
+      width: 100%;
+    }
+  }
 
   &__information {
     @extend %flexbox;
@@ -27,19 +33,67 @@
 
 @include respond-to($breakpoint-tablets) {
   .hero {
+    grid-template-columns: 43.7rem 1fr;
+
+    &__container {
+      display: none;
+    }
+    &__image {
+      margin-bottom: 0;
+
+      img {
+        max-width: 43.7rem;
+      }
+    }
     &__information {
-      position: absolute;
       padding: 0;
-      right: 4rem;
       align-self: center;
-      max-width: 33.9rem;
-      gap: 0;
-      row-gap: 4.8rem;
+      width: 33.9rem;
+      transform: translateX(-4rem);
+      gap: 4.8rem;
     }
 
     &__title {
       font-size: 7rem;
       line-height: 65px;
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .hero {
+    grid-template-columns: 45rem 54rem 1fr;
+    margin: 0 16.4rem 18rem 0;
+
+    &__container {
+      display: block;
+    }
+
+    &__container {
+      height: auto;
+      background-color: $color-black;
+    }
+
+    &__image {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__information {
+      width: 35rem;
+
+      transform: translate(0);
+    }
+
+    &__title {
+      font-size: 9.6rem;
+      line-height: 8.8rem;
+    }
+
+    &__description {
+      font-size: 2.2rem;
+      line-height: 3.2rem;
     }
   }
 }
