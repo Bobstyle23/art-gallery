@@ -51,3 +51,19 @@
     }
   }
 }
+
+@include respond-to($breakpoint-desktops) {
+  .footer {
+    padding: 8rem 16.5rem;
+
+    &__title {
+      font-size: 3.4rem;
+      line-height: 30px;
+    }
+
+    &__description {
+      font-size: 1.8rem;
+      line-height: 28px;
+    }
+  }
+}

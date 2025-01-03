@@ -155,7 +155,6 @@ body {
   margin: 0 auto;
   justify-items: baseline;
   row-gap: 3.8rem;
-  /* aspect-ratio: 1440 / 375;  */
   padding: 4.8rem 3.2rem;
   background-color: #151515;
   color: #fff; }
@@ -181,6 +180,15 @@ body {
     .footer__icons {
       align-self: baseline;
       justify-self: end; } }
+@media (min-width: 75em) {
+  .footer {
+    padding: 8rem 16.5rem; }
+    .footer__title {
+      font-size: 3.4rem;
+      line-height: 30px; }
+    .footer__description {
+      font-size: 1.8rem;
+      line-height: 28px; } }
 .location__image img {
   width: 100%; }
 .location__header {
