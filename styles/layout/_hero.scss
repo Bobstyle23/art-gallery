@@ -1,13 +1,14 @@
 .hero {
   @extend %grid;
-
+  position: relative;
   margin-bottom: 12rem;
 
   &__container {
     display: none;
   }
 
-  &__image {
+  &__image,
+  &__description {
     margin-bottom: 3.2rem;
 
     img {
@@ -32,7 +33,6 @@
   &__description {
     @extend %body-sm;
     color: $color-dark-gray;
-    margin-bottom: 3.2rem;
   }
 }
 
@@ -44,7 +44,7 @@
       margin-bottom: 0;
 
       img {
-        max-width: 43.7rem;
+        width: 100%;
       }
     }
     &__information {
@@ -67,8 +67,9 @@
 
 @include respond-to($breakpoint-desktops) {
   .hero {
-    grid-template-columns: 45rem 54rem 1fr;
+    grid-template-columns: 45rem 54rem;
     margin: 0 16.4rem 18rem 0;
+    max-width: 127.5rem;
 
     &__container {
       display: block;
@@ -81,19 +82,39 @@
 
     &__image {
       img {
-        max-width: 100%;
+        width: 100%;
       }
     }
 
     &__information {
-      width: 35rem;
-
       transform: translate(0);
+      position: absolute;
+      top: 19rem;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0;
+      width: 100%;
+    }
+
+    &__cta {
+      max-width: 35rem;
     }
 
     &__title {
       font-size: 9.6rem;
       line-height: 8.8rem;
+      color: $color-white;
+      align-self: flex-start;
+      margin-left: 16.5rem;
+      background-image: linear-gradient(
+        90deg,
+        $color-white 64%,
+        $color-black 50% 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     &__description {
