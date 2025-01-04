@@ -117,9 +117,10 @@ body {
   .hero {
     grid-template-columns: 43.7rem 1fr; }
     .hero__image {
-      margin-bottom: 0; }
-      .hero__image img {
-        width: 100%; }
+      margin-bottom: 0;
+      /* img { */
+      /*   width: 100%; */
+      /* } */ }
     .hero__information {
       padding: 0;
       align-self: center;
@@ -131,36 +132,32 @@ body {
       line-height: 65px; }
     .hero__description {
       margin-bottom: 4.8rem; } }
-@media (min-width: 75em) {
+@media (min-width: 64em) {
   .hero {
-    grid-template-columns: 45rem 54rem;
-    margin: 0 16.4rem 18rem 0;
-    max-width: 127.5rem; }
+    grid-template-columns: 45rem 45.7rem;
+    max-width: 102.4rem; }
     .hero__container {
-      display: block; }
-    .hero__container {
-      height: auto;
-      background-color: #151515; }
-    .hero__image img {
-      width: 100%; }
+      display: block;
+      background-color: #151515;
+      height: auto; }
     .hero__information {
       transform: translate(0);
       position: absolute;
+      top: 19rem;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      top: 19rem;
-      width: 100%;
-      gap: 0; }
+      gap: 0;
+      width: 100%; }
     .hero__cta {
       max-width: 35rem; }
     .hero__title {
-      font-size: 9.6rem;
-      line-height: 8.8rem;
+      font-size: 8.6rem;
+      line-height: 7.4rem;
       color: #fff;
       align-self: flex-start;
-      margin-left: 16.5rem;
-      background-image: linear-gradient(90deg, #fff 64%, #151515 50% 100%);
+      margin-left: 9.5rem;
+      background-image: linear-gradient(90deg, #fff 88%, #151515 60% 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text; }
@@ -168,6 +165,19 @@ body {
       font-size: 2.2rem;
       line-height: 3.2rem;
       margin-bottom: 6.4rem; } }
+@media (min-width: 75em) {
+  .hero {
+    grid-template-columns: 45rem 54rem;
+    margin: 0 16.4rem 18rem 0;
+    max-width: 127.5rem; }
+    .hero__title {
+      font-size: 9.6rem;
+      line-height: 8.8rem;
+      margin-left: 16.5rem;
+      background-image: linear-gradient(90deg, #fff 64%, #151515 50% 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text; } }
 .gallery {
   row-gap: 1.6rem;
   padding: 0 1.6rem;
