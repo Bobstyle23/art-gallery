@@ -205,6 +205,30 @@ body {
       font-size: 5rem;
       line-height: 45px; }
 
+@media (min-width: 48em) {
+  .gallery {
+    padding: 0 4rem; }
+    .gallery__container--first {
+      grid-template-columns: 22.3rem 39.8rem;
+      column-gap: 6.8rem;
+      margin-bottom: 1.1rem; }
+    .gallery__container--second {
+      grid-template-columns: 39.8rem 28rem;
+      gap: 1.1rem; }
+    .gallery__image--first {
+      grid-column: 2;
+      margin-bottom: 0; }
+      .gallery__image--first img {
+        width: 100%;
+        height: auto; }
+    .gallery__image--second {
+      grid-row: 1 / 3; }
+    .gallery__information {
+      gap: 2.4rem; }
+    .gallery__title {
+      margin-bottom: 0; }
+    .gallery__cta {
+      padding: 8.5rem 3rem; } }
 .footer {
   max-width: 144rem;
   margin: 0 auto;

@@ -64,3 +64,50 @@
     }
   }
 }
+
+@include respond-to($breakpoint-tablets) {
+  .gallery {
+    padding: 0 4rem;
+
+    &__container {
+      &--first {
+        grid-template-columns: 22.3rem 39.8rem;
+        column-gap: 6.8rem;
+        margin-bottom: 1.1rem;
+      }
+
+      &--second {
+        grid-template-columns: 39.8rem 28rem;
+        gap: 1.1rem;
+      }
+    }
+
+    &__image {
+      &--first {
+        grid-column: 2;
+        margin-bottom: 0;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &--second {
+        grid-row: 1 / 3;
+      }
+    }
+
+    &__information {
+      gap: 2.4rem;
+    }
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    &__cta {
+      padding: 8.5rem 3rem;
+    }
+  }
+}
